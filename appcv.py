@@ -12,11 +12,11 @@ def to_markdown(text):
 
 # List of 5 API keys
 api_keys = [
-    'AIzaSyCk4OYtxWAwcoN3Vk4UKbfvDan6IlXAlrU',
-    'API_KEY_2',
-    'API_KEY_3',
-    'API_KEY_4',
-    'API_KEY_5',
+    st.secrets["api_keys"]["key1"],
+    st.secrets["api_keys"]["key2"],
+    st.secrets["api_keys"]["key3"],
+    st.secrets["api_keys"]["key4"],
+    st.secrets["api_keys"]["key5"],
 ]
 
 # Track the last used API key index
