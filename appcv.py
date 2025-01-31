@@ -29,7 +29,7 @@ def configure_api_key():
         try:
             key = api_keys[api_key_index]  # Select the current API key
             genai.configure(api_key=key)
-            model = genai.GenerativeModel('gemini-pro')  # Configure the model with the API key
+            model = genai.GenerativeModel('gemini-1.5-flash')  # Configure the model with the API key
             api_key_index += 1  # Move to the next key for the next time
             return model
         except Exception as e:
