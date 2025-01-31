@@ -199,5 +199,3 @@ st.image("Logo.png", caption="Ifcar Solutions", use_container_width=True)
 if __name__ == '__main__':
     main()
 
-st.markdown('[🔍 Trouvez Votre Job sur IFCAR Job 🚀](https://ifcarjob.com)', unsafe_allow_html=True)
-
