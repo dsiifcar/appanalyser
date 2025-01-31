@@ -88,7 +88,6 @@ def main():
         # File uploader with unique key
         uploaded_file = st.file_uploader('Uploader votre PDF ou WORD CV 📤', type=['pdf', 'docx'], key='file_uploader_1')
 
-        st.image("Logo.png", caption="Déposez votre CV ici 📄", use_container_width=True)
 
 
 
@@ -188,6 +187,8 @@ def main():
                 st.warning("Votre CV n'est pas compatible. Changer votre 📄")
         else:
             st.info("")
+        
+st.image("Logo.png", caption="Déposez votre CV ici 📄", use_container_width=True)
 
 if __name__ == '__main__':
     main()
