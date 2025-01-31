@@ -155,7 +155,7 @@ def main():
 
                             if executed:  # Ensure results are shown before displaying the button
                                 with button_placeholder:
-                                    st.markdown('[🔍 Trouvez Votre Job sur IFCAR Job 🚀](https://ifcarjob.com)', unsafe_allow_html=True)
+                                    st.markdown('[Trouvez Votre Emploi sur IFCAR Job](https://ifcarjob.com)', unsafe_allow_html=True)
 
                         except Exception as e:
                             st.error(f"Erreur dans l'analyse de votre CV: {e}")
