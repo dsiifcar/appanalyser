@@ -88,6 +88,9 @@ def main():
         # File uploader with unique key
         uploaded_file = st.file_uploader('Uploader votre PDF ou WORD CV 📤', type=['pdf', 'docx'], key='file_uploader_1')
 
+        st.image("Logo.png", caption="Déposez votre CV ici 📄", use_column_width=True)
+
+
         if uploaded_file is not None:
             file_extension = uploaded_file.name.split('.')[-1].lower()
 
