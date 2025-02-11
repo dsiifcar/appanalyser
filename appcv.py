@@ -60,6 +60,25 @@ def extract_text_from_docx(uploaded_file):
         text += para.text + '\n'
     return text
 
+def add_footer():
+    st.markdown("---")  # Add a separator
+    st.markdown("##### Ressources Utiles:")
+
+    col1, col2, col3, col4 = st.columns(4)  # Create three columns
+
+    with col1:
+        st.link_button("Nos offres d'emploi", "https://ifcarjob.com/offres-demploi")
+
+    with col2:
+        st.link_button("Analyser vos CV", "https://cvanalyserapp.streamlit.app/")
+
+    with col3:
+        st.link_button("Déposez vos CV", "mailto:cv@ifcarjob.com")
+
+    with col4:
+        st.link_button("Notre page Linkedin", "https://www.linkedin.com/company/ifcarsolutions/")
+
+
 def main():
     st.title('🔍 Outil Analyse des CVs Gratuit')
 
@@ -83,6 +102,8 @@ def main():
 
         📌 **Essayez notre analyse de CV dès aujourd’hui** et boostez vos chances de décrocher votre prochain poste !
         """)
+
+        add_footer()
 
     else:
         # File uploader with unique key
@@ -193,9 +214,10 @@ def main():
                 st.warning("Votre CV n'est pas compatible. Changer votre 📄")
         else:
             st.info("")
+
+        add_footer()
         
 st.image("Logo.png", caption="Ifcar Solutions", use_container_width=True)
 
 if __name__ == '__main__':
     main()
-
